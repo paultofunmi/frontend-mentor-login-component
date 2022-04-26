@@ -1,0 +1,165 @@
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.display-block {
+    display: block !important;
+}
+
+.error-border-highlight {
+    border: solid thin var(--red);    
+}
+
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --dark-green: hsl(154, 63%, 31%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --black: hsla(0, 0%, 0%, 0.1);
+    --gray-blue: hsl(246, 25%, 77%);
+}
+
+body {
+    height: 100vh;
+    background-color: var(--red);
+    background-image: url(images/bg-intro-mobile.png);
+    background-repeat: none;
+    background-position: center;    
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    /* border: solid thin white; */
+    padding: 0 30px;
+}
+
+.container-1 {
+    color: white;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.container-1 h1 {
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.container-2 {
+    margin-top: 20px;
+}
+
+.container-2 .trial {
+    background: var(--blue);
+    padding: 10px 20px;
+    color: #FFF;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: -1px 5px var(--black);
+    margin: 0 0 1.5em 0;
+}
+
+.trial__headline {
+    font-weight: 500;
+}
+
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px var(--black);
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin: 5px auto;
+    position: relative;
+}
+
+.input-group .error-icon {
+    position: absolute;
+    right: 10px;
+    top: 16px;
+    display: none;
+}
+
+input {
+    padding: 10px 10px 10px 20px;
+    margin: 10px 0;
+    width: 100%;
+    border: 0;
+    outline: none;
+    border: solid thin var(--gray-blue);
+    border-radius: 5px;
+}
+
+.error-message {
+    text-align: right;
+    color: var(--red);
+    font-size: 0.7em;
+    font-style: italic;
+    margin: 0;
+    display: none;
+}
+
+input:focus {
+    border: solid thin var(--blue);
+}
+
+form button {
+    border: 0;
+    border-radius: 5px;
+    background: var(--green);
+    cursor: pointer;
+    box-shadow: 0px 3px #75C8A2;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+form .terms-conditions {
+    color: var(--gray-blue);
+    font-size: 0.6em;
+    text-align: center;
+}
+
+.terms-conditions span {
+    color: var(--red)
+}
+
+
+@media (min-width: 420px) {
+    
+    body {
+        background-image: url(images/bg-intro-desktop.png);
+    }
+
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .container-1 {
+        text-align: left;
+    }
+
+    .container-1 h1 {
+        font-size: 3em;
+        margin-bottom: 16px;
+    }
+}
