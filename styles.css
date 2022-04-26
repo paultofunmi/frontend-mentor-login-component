@@ -2,10 +2,10 @@
     box-sizing: border-box;
 }
 
-/* * {
+* {
     padding: 0;
     margin: 0;
-} */
+}
 
 .display-block {
     display: block !important;
@@ -29,13 +29,13 @@ body {
     height: 100vh;
     background-color: var(--red);
     background-image: url(images/bg-intro-mobile.png);
-    background-repeat: none;
     background-position: center;    
     font-family: 'Poppins', sans-serif;
 }
 
 .container {
     display: flex;
+    /* flex-wrap: no-wrap; */
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -58,6 +58,7 @@ body {
 
 .container-2 {
     margin-top: 20px;
+    display: grid;
 }
 
 .container-2 .trial {
