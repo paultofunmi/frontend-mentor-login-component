@@ -40,8 +40,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     height: 100vh;
-    /* border: solid thin white; */
-    padding: 0 30px;
+    padding: 10px 30px;
 }
 
 .container-1 {
@@ -162,5 +161,9 @@ form .terms-conditions {
     .container-1 h1 {
         font-size: 3em;
         margin-bottom: 16px;
+    }
+
+    .container-2 .trial {
+        margin: 12.5em 0 1.5em 0
     }
 }
